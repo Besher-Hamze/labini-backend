@@ -1,73 +1,76 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+Labini
+<!-- Replace with an actual image link if available -->
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Labini is a cutting-edge e-commerce platform tailored specifically for the Syrian market, offering a streamlined and secure online shopping experience. By bridging the gap between local businesses and consumers, Labini empowers both buyers and sellers in Syria, making it easier to discover, buy, and sell products online.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+🌟 Key Features
+Elegant User Experience: Clean, responsive design that delivers a smooth shopping journey on both desktop and mobile.
+Product Discovery: Easily browse products by category, with in-depth product details, images, and pricing.
+Secure Transactions: End-to-end encrypted payment solutions ensuring safe and trusted online purchases.
+Personalized User Accounts: User profiles with order tracking, favorites, and custom recommendations for a more tailored experience.
+Seamless Cart & Checkout: Simplified cart management and checkout process for a frictionless purchase flow.
+Real-Time Order Tracking: From order placement to delivery, users stay informed with live updates.
+Admin Dashboard: For businesses to manage inventory, view sales metrics, and monitor trends with ease.
+📈 Tech Stack
+Labini leverages a robust tech stack to ensure performance, scalability, and a seamless experience.
 
-## Description
+Frontend: Built with modern frameworks for responsiveness and a smooth, intuitive UI.
+Backend: Powerful RESTful API using NestJS for secure and efficient data management.
+Database: Prisma ORM with support for relational databases, optimized for scalability.
+Hosting: Hosted on AWS and Vercel for optimized performance and high availability.
+Payment Integration: Secure and reliable payment gateway solutions specific to the Syrian market.
+🛠️ Installation & Setup
+To get a local instance of Labini running, follow these steps:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Clone the Repository:
 
-## Installation
+bash
+Copy code
+git clone https://github.com/Besher-Hamze/labini-backend.git
+cd labini-backend
+Install Dependencies:
 
-```bash
-$ npm install
-```
+bash
+Copy code
+npm install
+Set Up Environment Variables:
 
-## Running the app
+Create a .env file following the structure in .env.example.
+Add database credentials, payment gateway configurations, and other required environment settings.
+Run the Application:
 
-```bash
-# development
-$ npm run start
+bash
+Copy code
+npm run start
+Access the Application:
 
-# watch mode
-$ npm run start:dev
+The backend server will start on http://localhost:3000 by default.
+🚀 Getting Started with Prisma
+Labini uses Prisma as an ORM for smooth data handling. Ensure you have a database connection configured in your .env file, then initialize Prisma:
 
-# production mode
-$ npm run start:prod
-```
+bash
+Copy code
+npx prisma migrate dev --name init
+npx prisma generate
+📚 API Documentation
+The Labini API offers extensive endpoints for product browsing, user account management, cart functionality, and order tracking. Full documentation can be accessed at http://localhost:3000/api.
 
-## Test
+Example Endpoints:
 
-```bash
-# unit tests
-$ npm run test
+GET /products - Retrieve a list of available products.
+POST /users - Register a new user.
+POST /cart - Add items to the cart.
+🤝 Contributing
+Labini welcomes contributions! Here’s how you can get involved:
 
-# e2e tests
-$ npm run test:e2e
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeature).
+Commit your changes (git commit -m 'Add a new feature').
+Push to the branch (git push origin feature/YourFeature).
+Open a pull request.
+Please ensure your code follows our coding standards and includes relevant tests.
 
-# test coverage
-$ npm run test:cov
-```
+📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Labini is transforming the e-commerce landscape in Syria by making online shopping secure, accessible, and tailored to local needs. Join us on this journey to empower businesses and create a better shopping experience for everyone!
