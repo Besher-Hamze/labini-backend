@@ -15,6 +15,9 @@ export class SubCategory {
   @Column()
   imageUrl: string;
 
+  @Column()
+  categoryId: number;
+
   @ManyToOne(() => Category, (category) => category.subCategories, { nullable: false })
   category: Category;
 
